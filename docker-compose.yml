@@ -1,0 +1,15 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    init: true
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      NODE_ENV: production
+    volumes:
+      - data:/app/data
+
+volumes:
+  data:

@@ -1,0 +1,8 @@
+{
+  "bot": {
+    "messages": {
+      "error": "There was an error while executing this action.",
+      "permissionDenied": "You do not have the permission to execute this action."
+    }
+  }
+}

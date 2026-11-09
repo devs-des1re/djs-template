@@ -1,0 +1,30 @@
+{
+  "name": "djs-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node deploy-commands.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "discord.js": "^14.28.1",
+    "dotenv": "^18.0.10",
+    "drizzle-orm": "^0.45.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11",
+    "prettier": "^3.9.10"
+  }
+}
